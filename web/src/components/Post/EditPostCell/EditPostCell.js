@@ -5,7 +5,7 @@ import PostForm from 'src/components/Post/PostForm'
 
 export const QUERY = gql`
   query FindPostById($id: Int!) {
-    post: adminPost(id: $id) {
+    post: post(id: $id) {
       id
       title
       body
